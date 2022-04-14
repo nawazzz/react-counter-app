@@ -71,4 +71,78 @@ table {
     border-radius: 40%;
     }
   }
+  .countOperationContainer{
+    .buttonsContainer{
+      width: 200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .refreshButton{
+        width: 20px;
+        background-color: #218838;
+        cursor: pointer;
+        img{
+          width: 100%;
+        }
+      }
+      .recycleButton{
+        width: 20px;
+        cursor: pointer;
+        background-color: #007bff;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .heroContainer{
+      width: 210px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .buttonContainerOne{
+        width: 70px;
+        background-color: #ffc107;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-radius: 5px;
+      }
+      .buttonContainerTwo{
+        width: 40px;
+        background-color: #5a6268;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        img{
+          width: 30%;
+        }
+      }
+      .buttonContainerThree{
+        width: 40px;
+        background-color: #17a2b8;  
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        img{
+          width: 30%;
+          background-color: white;
+          border-radius: 50%;
+          padding: 2px;
+        }
+      }
+      .buttonContainerFour{
+        width: 40px;
+        background-color: #c82333;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        img{
+          width: 30%;
+        }
+      }
+    }
+  }
 }
