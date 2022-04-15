@@ -54,6 +54,7 @@ table {
   .headerContainer{
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     h1{
       font-size: 25px;
       font-weight: 900;
@@ -62,34 +63,71 @@ table {
   .totalCountContainer{
     display: flex;
     justify-content: space-between;
-    width: 150px;
+    width: 160px;
     margin: 0 auto;
+    padding: 10px;
     .counter{
       width: 50px;
     font-size: 24px;
     background: #17a2b8;
     border-radius: 40%;
     }
+    .cart{
+      width: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+    .alldataCounter{
+      background-color: #17a2b8;
+      padding: 7px 10px 5px 10px;
+      border-radius: 10rem;
+      width: 40px;
+      height: 25px;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      h6{
+        // padding: 10px;
+        font-size: 20px;
+        font-weight: 900;
+      }
+    }
+    .items{
+      width: 35px;
+      text-align: center;
+      padding: 10px;
+      h6{
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
   }
   .countOperationContainer{
     .buttonsContainer{
-      width: 200px;
+      width: 100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
 
       .refreshButton{
-        width: 20px;
+        width: 23px;
+        height: 20px;
         background-color: #218838;
+        padding: 10px 10px 12px 10px;
+        border-radius: 5px;
         cursor: pointer;
         img{
           width: 100%;
         }
       }
       .recycleButton{
-        width: 20px;
+        width: 23px;
+        height: 20px;
         cursor: pointer;
         background-color: #007bff;
+        padding: 10px 10px 12px 10px;
+        border-radius: 5px;
+
         img{
           width: 100%;
         }
@@ -100,12 +138,18 @@ table {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      padding: 5px;
       .buttonContainerOne{
         width: 70px;
         background-color: #ffc107;
         text-align: center;
         padding: 10px 0 10px 0;
         border-radius: 5px;
+        cursor: default;
+        h6{
+          font-size: 20px;
+          font-weight: 900;
+        }
       }
       .buttonContainerTwo{
         width: 40px;

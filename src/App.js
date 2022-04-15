@@ -12,8 +12,16 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      allData: []
     }
+  }
+
+  componentDidUpdate = (event) => {
+    // console.log(event)
+  }
+
+  increaseCounter = (event) => {
+    console.log(event)
   }
 
   render() {
@@ -23,14 +31,14 @@ class App extends React.Component {
           <h1>Counter App</h1>
         </div>
         <div className='totalCountContainer'>
-          <div style={{width: "20px"}}>
+          <div className='cart'>
             <img src={cart} alt="cart" style={{width: "100%"}} />
             {/* <FontAwesomeIcon icon="fa-solid fa-cart-shopping" /> */}
           </div>
-          <div className=''>
-              <h6>0</h6>
+          <div className='alldataCounter'>
+              <h6>{this.state.allData.length}</h6>
           </div>
-          <div>
+          <div className='items'>
             <h6>items</h6>
           </div>
         </div>
@@ -45,9 +53,9 @@ class App extends React.Component {
           </div>
           <div className='heroContainer'>
             <div className='buttonContainerOne'>
-              {"Zero"}
+              <h6>Zero</h6>
             </div>
-            <div className='buttonContainerTwo'>
+            <div id={Math.floor(Math.random()*90000) + 10000} className='buttonContainerTwo' onClick={this.increaseCounter} >
               <img src={plusIcon} alt={"plus sign"}/>
             </div>
             <div className='buttonContainerThree'>
@@ -57,9 +65,48 @@ class App extends React.Component {
               <img src={trashIcon} alt={"delete sign"}/>
             </div>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className='heroContainer'>
+            <div className='buttonContainerOne'>
+              <h6>Zero</h6>
+            </div>
+            <div className='buttonContainerTwo' onClick={this.increaseCounter} >
+              <img src={plusIcon} alt={"plus sign"}/>
+            </div>
+            <div className='buttonContainerThree'>
+              <img src={minusIcon} alt={"minus sign"}/>
+            </div>
+            <div className='buttonContainerFour'>
+              <img src={trashIcon} alt={"delete sign"}/>
+            </div>
+          </div>
+          <div className='heroContainer'>
+            <div className='buttonContainerOne'>
+              <h6>Zero</h6>
+            </div>
+            <div className='buttonContainerTwo' onClick={this.increaseCounter} >
+              <img src={plusIcon} alt={"plus sign"}/>
+            </div>
+            <div className='buttonContainerThree'>
+              <img src={minusIcon} alt={"minus sign"}/>
+            </div>
+            <div className='buttonContainerFour'>
+              <img src={trashIcon} alt={"delete sign"}/>
+            </div>
+          </div>
+          <div className='heroContainer'>
+            <div className='buttonContainerOne'>
+              <h6>Zero</h6>
+            </div>
+            <div className='buttonContainerTwo' onClick={this.increaseCounter} >
+              <img src={plusIcon} alt={"plus sign"}/>
+            </div>
+            <div className='buttonContainerThree'>
+              <img src={minusIcon} alt={"minus sign"}/>
+            </div>
+            <div className='buttonContainerFour'>
+              <img src={trashIcon} alt={"delete sign"}/>
+            </div>
+          </div>
         </div>
       </div>
     );
